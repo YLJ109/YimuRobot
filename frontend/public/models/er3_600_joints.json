@@ -1,0 +1,165 @@
+{
+  "source": "ER3-600_model_V1.2.step",
+  "unit": "m",
+  "upAxis": "Z",
+  "note": "关节几何来自官方 ER3-600 数模 V1.2 实测（CYLINDRICAL_SURFACE 共轴聚类）",
+  "measured": {
+    "d1": 367.5,
+    "L2": 295,
+    "e3": 37,
+    "L4": 295.5,
+    "tool": 78.5
+  },
+  "reachMm": 592.8074042061413,
+  "nodes": [
+    {
+      "name": "Base",
+      "label": "底座",
+      "axis": null,
+      "localPositionMm": [
+        0,
+        0,
+        0
+      ],
+      "pivotMm": [
+        0,
+        0,
+        0
+      ],
+      "parent": null,
+      "meshes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "J1",
+      "label": "转座",
+      "axis": "z",
+      "localPositionMm": [
+        0,
+        0,
+        0
+      ],
+      "pivotMm": [
+        0,
+        0,
+        0
+      ],
+      "parent": "Base",
+      "meshes": [
+        7
+      ]
+    },
+    {
+      "name": "J2",
+      "label": "大臂",
+      "axis": "y",
+      "localPositionMm": [
+        0,
+        0,
+        367.5
+      ],
+      "pivotMm": [
+        0,
+        0,
+        367.5
+      ],
+      "parent": "J1",
+      "meshes": [
+        8
+      ]
+    },
+    {
+      "name": "J3",
+      "label": "电机座",
+      "axis": "y",
+      "localPositionMm": [
+        0,
+        0,
+        295
+      ],
+      "pivotMm": [
+        0,
+        0,
+        662.5
+      ],
+      "parent": "J2",
+      "meshes": [
+        9
+      ]
+    },
+    {
+      "name": "J4",
+      "label": "手腕体",
+      "axis": "x",
+      "localPositionMm": [
+        0,
+        0,
+        37
+      ],
+      "pivotMm": [
+        0,
+        0,
+        699.5
+      ],
+      "parent": "J3",
+      "meshes": [
+        10
+      ]
+    },
+    {
+      "name": "J5",
+      "label": "手腕",
+      "axis": "y",
+      "localPositionMm": [
+        295.5,
+        0,
+        0
+      ],
+      "pivotMm": [
+        295.5,
+        0,
+        699.5
+      ],
+      "parent": "J4",
+      "meshes": [
+        11
+      ]
+    },
+    {
+      "name": "J6",
+      "label": "法兰",
+      "axis": "x",
+      "localPositionMm": [
+        0,
+        0,
+        0
+      ],
+      "pivotMm": [
+        295.5,
+        0,
+        699.5
+      ],
+      "parent": "J5",
+      "meshes": [
+        12
+      ]
+    },
+    {
+      "name": "WorkspaceEnvelope",
+      "label": "运动范围包络",
+      "axis": null,
+      "parent": "root",
+      "meshes": [
+        13
+      ],
+      "triangles": 4556
+    }
+  ]
+}

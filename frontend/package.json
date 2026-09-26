@@ -1,0 +1,33 @@
+{
+  "name": "efort-robot-sim",
+  "version": "1.0.0",
+  "description": "埃夫特六轴工业机器人 3D 仿真系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.12.0",
+    "@codemirror/commands": "^6.3.0",
+    "@codemirror/highlight": "^0.19.0",
+    "@codemirror/language": "^6.9.0",
+    "@codemirror/state": "^6.4.0",
+    "@codemirror/view": "^6.20.0",
+    "@element-plus/icons-vue": "^2.3.0",
+    "@lezer/highlight": "^1.2.0",
+    "@lezer/lr": "^1.4.0",
+    "element-plus": "^2.5.0",
+    "pinia": "^2.1.0",
+    "socket.io-client": "^4.7.0",
+    "three": "^0.160.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "unplugin-auto-import": "^0.18.6",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^5.0.0"
+  }
+}

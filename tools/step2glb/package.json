@@ -1,0 +1,12 @@
+{
+  "name": "step2glb",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Convert EFORT ER3-600 STEP digital model to GLB for the Three.js simulator",
+  "dependencies": {
+    "occt-import-js": "^0.0.23",
+    "pdfjs-dist": "^4.6.82",
+    "three": "0.169.0"
+  }
+}
