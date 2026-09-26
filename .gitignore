@@ -1,0 +1,86 @@
+# ═══════════════ 环境与密钥 ═══════════════
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ═══════════════ Python ═══════════════
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ═══════════════ 数据库（含用户场景/程序数据）═══════════════
+*.db
+*.sqlite
+*.sqlite3
+backend/robot_sim.db
+
+# ═══════════════ Node / 前端 ═══════════════
+node_modules/
+frontend/dist/
+frontend/dist-cm/
+frontend/dist-comp/
+frontend/dist-test/
+frontend/dist-test2/
+frontend/dist-test3/
+frontend/dist-*/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vite/
+
+# ═══════════════ 运行时产物 ═══════════════
+backend/static/audio/*.mp3
+backend/static/audio/*.wav
+*.log
+logs/
+logs_*.txt
+
+# ═══════════════ Windows 垃圾文件 ═══════════════
+nul
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# ═══════════════ 编辑器 / 系统 ═══════════════
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ═══════════════ IDE 产物（CodeBuddy 等）══════════════
+.arts/
+.codeartsdoer/
+.workbuddy/
