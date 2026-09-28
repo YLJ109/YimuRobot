@@ -1,8 +1,28 @@
-# 埃夫特 ER3-600 六轴工业机器人 3D 仿真系统
+# YimuRobot · 六轴工业机器人 3D 仿真系统
 
-支持 **AI 大模型自然语言控制（语音 + 文字）** 的埃夫特六轴工业机器人 3D 仿真教学演示系统。前端浏览器实时渲染机器人运动学与场景，后端用 Flask + SocketIO 驱动虚拟控制器，配套智谱 GLM 大模型做指令理解与程序生成、faster-whisper 做本地语音识别、edge-tts 做语音播报。
+**YimuRobot** 是一套支持 **AI 大模型自然语言控制（语音 + 文字）** 的六轴工业机器人 3D 仿真教学演示系统（机器人本体：埃夫特 ER3-600）。前端浏览器实时渲染机器人运动学与场景，后端用 Flask + SocketIO 驱动虚拟控制器，配套智谱 GLM 大模型做指令理解与程序生成、faster-whisper 做本地语音识别、edge-tts 做语音播报。
 
 > 定位：华为 Demo 场景。零硬件依赖，纯仿真；适合答辩、演示、教学。
+
+---
+
+## 项目截图
+
+**主界面 · 手动控制 / 3D 视口 / AI 助手 / DSL 编辑器**
+
+![主界面](docs/shots/yimu_01_main.png)
+
+**安全围栏 · 缩放 / 调高 / 临近度分级（安全 → 警告 → 危险 → 碰撞红闪）**
+
+![安全围栏](docs/shots/yimu_02_fence.png)
+
+**物体库 · 场景物体增删改，即时同步 3D 数模**
+
+![物体库](docs/shots/yimu_03_objects.png)
+
+**AI 自然语言控制 · 示例指令「回家」→ 生成 HOME 程序 → 自动执行**
+
+![AI 自然语言控制](docs/shots/yimu_04_ai.png)
 
 ---
 
@@ -86,6 +106,7 @@ HuaweiDemoAgent/
 │   ├── ptt_probe.mjs        # 长按空格 push-to-talk 验证（6 项）
 │   ├── fence_test.mjs       # 安全围栏分级单测（9 项，纯 Node）
 │   ├── fence_probe.mjs      # 安全围栏端到端验证（14 项，含截图）
+│   ├── capture_shots.mjs    # README 项目截图生成（headless Chrome，重拍到 docs/shots）
 │   └── step2glb/            # STEP→GLB 模型转换管线（一次性，node_modules 可重装）
 ├── docs/                     # 文档（代码审查报告等）
 ├── start.bat / start.sh      # 一键启动（自动建 venv + 装依赖）
@@ -267,6 +288,7 @@ node tools/ptt_probe.mjs       # 长按空格 push-to-talk（6 项）
 node tools/fence_test.mjs      # 安全围栏分级单测（9 项，纯 Node）
 node tools/fence_probe.mjs     # 安全围栏端到端（14 项，含截图）
 node tools/tts_toggle_probe.mjs # 语音播报开关（10 项：UI + 持久化 + speak 拦截）
+node tools/capture_shots.mjs   # 重新生成 README 项目截图（输出 docs/shots/yimu_*.png）
 ```
 
 ---

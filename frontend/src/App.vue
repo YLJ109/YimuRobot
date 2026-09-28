@@ -5,7 +5,7 @@
       <div class="header-left">
         <div class="brand">
           <span class="brand-mark"></span>
-          <span class="brand-name">ER3-600</span>
+          <span class="brand-name">YimuRobot</span>
           <span class="brand-sub">机器人仿真</span>
         </div>
         <div class="conn-led" :class="{ online: connected }">
